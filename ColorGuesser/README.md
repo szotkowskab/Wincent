@@ -1,0 +1,3 @@
+ColorGuesser is a real-time multiplayer game I made in 2024. The players join the game over a local network. In each round, every user has to guess the RGB code of a given color. When the round ends, each player receives a score based on how close they were to the actual value. A real-time leaderboard displays online users, who compete against each other.
+
+It's very easy to cheat in this game – you just need to open the dev tools in your browser. But winning in my own game was not the point. My main goal was to learn Node.js and Socket.io, which is why I created this project.

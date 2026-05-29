@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ropa+Sans:ital@0;1&display=swap');
+
+:root {
+    --text-color: #f7f3ec;
+    --background: #191107;
+    --background-muted: rgba(25, 17, 7, 0.5);
+    --primary: #e9c594;
+    --secondary: #925c12;
+    --wrap-padding: 120px;
+    --wrap-padding-small: 50px;
+    --text-fancy: "abril fatface", serif;
+    --text-normal: "Ropa Sans", sans-serif;
+    --fancy-letter-spacing: 0.15em;
+    --banner-size: 750px;
+}
+
+html {
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: var(--text-normal);
+}
+
+body {
+    margin: 0;
+}
+
+
+/* HEADER FOOTER */
+
+
+.header {
+    border-bottom: solid var(--primary) 1px;
+    z-index: 100;
+    position: sticky;
+    width: 100vw;
+    background: var(--background-muted);
+}
+
+.header_index {
+    position: fixed;
+}
+
+.footer {
+    border-top: solid var(--primary) 1px;
+    z-index: 100;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden
+}
+
+.wrap {
+    flex: 1;
+}
+
+/* COMMON */
+.flex {
+    display: flex;
+}
+
+.flex-dir-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.padding {
+    padding: 20px
+}
+
+.padding--small {
+    padding: 2px
+}
+
+.margin-top {
+    margin-top: 30px;
+}
+.margin-top--big {
+    margin-top: 50px;
+}
+
+.padding--big {
+    padding: 50px
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center
+}
+
+.wrap {
+    padding-left: var(--wrap-padding);
+    padding-right: var(--wrap-padding);
+}
+
+@media screen and (max-width: 600px) {
+    .wrap {
+        padding-left: var(--wrap-padding-small);
+        padding-right: var(--wrap-padding-small);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary)
+}
+
+/* NOT COMMON */
+
+/* HOME PAGE */
+
+
+
+.header__btn,
+.footer__btn {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.banner {
+    background-image: url("./img/intro.jpg");
+    height: var(--banner-size);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner__wrap__text{
+    max-height: var(--banner-size);
+    height: 92vh
+}
+
+h1,
+h2 {
+    font-family: var(--text-fancy);
+    letter-spacing: var(--fancy-letter-spacing);
+}
+
+h1 {
+    font-size: calc(8vw + 20px);
+}
+
+.banner__text>span {
+    font-size: calc(1.3vw + 9px);
+}
+.lists-wrap{
+    padding-bottom: 50px;
+}
+
+.lists-wrap__list{
+    flex: 1;
+    min-width: 200px;
+}
+
+.lists-wrap__list a {
+    line-height: 1.6rem;
+}
+
+/* SONG */
+
+.song-text_section {
+    position: relative;
+    top: 1.5em;
+    line-height: 4em;
+}
+
+.song-text_section::before {
+    position: absolute;
+    /* left: 0;
+    width: 100%; */
+    color: var(--primary);
+    top: -3.1em;
+
+}
+
+/* SONG LIST */
+#song_list>a {
+    line-height: 1.6rem;
+}
+
+/* SEARCH */
+#search-input {
+    min-width: 200px;
+    width: 30%;
+    height: 2rem;
+    border-radius: 4px;
+    margin-top: 10%;
+}
+
+#results {
+    line-height: 1.6rem;
+    min-width: 200px;
+    width: 30%;
+}
+
+/* ADD SONG */
+input,
+textarea,
+button {
+    border-radius: 4px;
+    font-family: var(--text-normal);
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: var(--primary) 1px solid;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--secondary);
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+}
+
+button {
+    width: 60px;
+    height: 25px;
+    font-weight: bold;
+}
+
+#chords_info {
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: var(--primary);
+    color: var(--background);
+    text-align: center;
+    border-radius: 6px;
+    padding: 7px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.add_song_text_input {
+    width: 30%;
+    min-width: 300px;
+}
+
+textarea {
+    height: 200px;
+}
+
+
+/* SONG ADDED */
+.list {
+    line-height: 1.6rem;
+}
+
+.logo {
+    height: calc(20px + 1rem);
+    padding-left: 15px;
+}
+
+.logo img {
+    height: 100%
+}

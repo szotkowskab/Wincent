@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Zpěvník</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <script src="../functions.js"></script>
+    <script src="./song_list_script.js"></script>
+</head>
+
+<body>
+    <div class="header full-width flex">
+        <div class="half-width flex align-center">
+            <a class="logo" href=".."><img src="../img/logo.png" /></a>
+        </div>
+        <div class="half-width padding text-align-right flex justify-around flex-wrap">
+            <a class="header__btn" href="../song_list">písně</a>
+            <a class="header__btn" href="../search">vyhledávat</a>
+            <a class="header__btn" href="../add_song">přidat</a>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <h2>Písně</h2>
+        <div class="tags">
+            <h4>Filtrovat pomocí štítků:</h4>
+            <input type="checkbox" id="czech" name="czech" onchange="updateValidTagsOnChange(event)">
+            <label for="czech">České</label><br>
+            <input type="checkbox" id="foreign" name="foreign" onchange="updateValidTagsOnChange(event)">
+            <label for="foreign">Zahraniční</label><br>
+            <input type="checkbox" id="folk" name="folk" onchange="updateValidTagsOnChange(event)">
+            <label for="folk">Lidové</label><br>
+            <input type="checkbox" id="carol" name="carol" onchange="updateValidTagsOnChange(event)">
+            <label for="carol">Koledy</label><br>
+            <input type="checkbox" id="artificial" name="artificial" onchange="updateValidTagsOnChange(event)">
+            <label for="artificial">Umělé</label><br>
+        </div>
+        <h4>Seznam:</h4>
+        <div id="song_list">
+        </div>
+    </div>
+
+    <div class="footer flex  margin-top flex-wrap">
+        <div class="full-width padding flex text-align-center align-center justify-around flex-wrap">
+            <a class="footer__btn">Tuto stránku vytvořila Barbora Szotkowská jako maturitní projekt pro Gymnázium
+                Karviná ve
+                školním roce 2024/25.</a>
+            <a class="footer__btn" href="../credits">zdroje</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="roundend/roundend.css">
+    <title>c:</title>
+</head>
+
+<body>
+
+    <div id="timer_wrap"><span id="timer"></span></div>
+
+    <span id="correct"  class="txt">Correct Answer: 
+        <span id="correct_rgb">rgb</span>
+    </span>
+
+    <span id="closest" class="txt">Closest Tip:
+        <span id="closest_rgb">rgb</span>
+        (
+            <span id="closest_name">name</span>
+        )
+    </span>
+
+
+    <div id="lb">
+    </div>
+
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/client.js"></script>
+
+</html>

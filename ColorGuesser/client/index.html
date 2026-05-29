@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>asdf</title>
+</head>
+
+<body>
+    <!--<span id="title">Some Title Here Placeholder</span>-->
+    <div>
+    <input type="text" class="txtinp" id="name" placeholder="enter your name" value="">
+        <div class="btn" id="start">start</div>
+    </div>
+    <!--<div></div>-->
+</body>
+<script src="/functions.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/client.js"></script>
+<script>
+    let r = Math.floor(Math.random()*255)
+    let g = Math.floor(Math.random()*255)
+    let b = Math.floor(Math.random()*255)
+    document.body.style.background = "rgb("+r+","+g+","+b+")"
+</script>
+</html>

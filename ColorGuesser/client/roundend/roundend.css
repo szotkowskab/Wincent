@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+*{
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    /*background-color: rgba(0,0,0,0.3);*/
+}
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aquamarine;
+    
+}
+
+#timer_wrap {
+    aspect-ratio: 1;
+    height: 6vmax;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.3);
+    border: solid white 4px;
+    font-size: xx-large;
+    position: relative;
+
+}
+#timer_wrap > *{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+#lb {
+    width: 20vw;
+    height: 20vh;
+    background-color: rgba(0,0,0,0.3);
+    border: solid white 4px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.txt{
+    font-size: xx-large;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 9px black;
+    /*-webkit-text-stroke: 1px rgba(0,0,0,0.7);*/
+}

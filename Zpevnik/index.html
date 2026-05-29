@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Zpěvník</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+</head>
+
+<body>
+    <div class="header_index header flex">
+        <div class="half-width flex align-center">
+            <a class="logo" href="."><img src="./img/logo.png" /></a>
+        </div>
+        <div class="half-width padding text-align-right flex justify-around flex-wrap">
+            <a class="header__btn" href="./song_list">písně</a>
+            <a class="header__btn" href="./search">vyhledávat</a>
+            <a class="header__btn" href="./add_song">přidat</a>
+        </div>
+    </div>
+
+    <div class="banner full-width">
+        <div class="banner__wrap__text flex justify-center align-center full-width">
+            <div class="banner__text flex flex-dir-col text-align-center">
+
+                <h1>Zpěvník</h1>
+                <span>texty i akordy na jednom místě</span>
+
+            </div>
+        </div>
+    </div>
+    <div class="wrap flex align-center justify-center margin-top--big">
+        <h2>náhodný výběr:</h2>
+    </div>
+    <div class="wrap lists-wrap flex justify-around flex-wrap text-align-center">
+        <div class="lists-wrap__list padding--small" id="czech_songs_list">
+            <h2>české písničky</h2>
+
+        </div>
+        <div class="lists-wrap__list padding--small" id="folk_songs_list">
+            <h2>lidové písničky</h2>
+
+        </div>
+        <div class="lists-wrap__list padding--small" id="carol_songs_list">
+            <h2>koledy</h2>
+        </div>
+    </div>
+
+    <div class="footer flex  margin-top flex-wrap">
+        <div class="full-width padding flex text-align-center align-center justify-around flex-wrap">
+            <a class="footer__btn">Tuto stránku vytvořila Barbora Szotkowská jako maturitní projekt pro Gymnázium
+                Karviná ve
+                školním roce 2024/25.</a>
+            <a class="footer__btn" href="./credits">zdroje</a>
+        </div>
+    </div>
+</body>
+<script src="./functions.js"></script>
+<script src="./add_random_songs_to_homepage.js"></script>
+
+</html>

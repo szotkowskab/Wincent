@@ -1,0 +1,3 @@
+This code game was made for my friend after I took his shoelaces (as a sweet revenge for many, *many* things he stole from me over the past year). I promised to give them back – but not without a challenge. I decided to hide the laces and make this project. The game consists of many puzzles and tasks. Each problem solution leads the player to the next task. The location of his laces is written at the end of this game. 
+
+This game is in Czech. If you understand this language, you can try solving it yourself directly on [this page](https://www.ms.mff.cuni.cz/~szotkowb/tkanicky/0/intro/). 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game/game.css">
+    <title>c:</title>
+</head>
+
+<body>
+
+    <div id="timer_wrap"><span id="timer"></span></div>
+
+    <div id=inputs_wrap>
+        <form>
+            <div id="rgb_wrap">
+                <div id="r_wrap" class="color_wrap">
+                    <span>R</span>
+                    <input type="number" size="3" id="R">
+                </div>
+                <div id="g_wrap" class="color_wrap">
+                    <span>G</span>
+                    <input type="number" size="3" id="G">
+                </div>
+                <div id="b_wrap" class="color_wrap">
+                    <span>B</span>
+                    <input type="number" size="3" id="B">
+                </div>
+            </div>
+
+            <div id="submit">submit</div>
+        </form>
+    </div>
+    <div></div>
+
+    <div id="lb">
+    </div>
+
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/client.js"></script>
+
+</html>

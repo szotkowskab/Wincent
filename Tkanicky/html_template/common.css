@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+*{
+    font-family: "Funnel Sans", sans-serif;
+    
+}
+body{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    color: #2a2a2a;
+    
+}
+h1{
+    color:grey;
+    font-family: "Poiret One", sans-serif;
+}
+hr{
+    border: solid 1px grey;
+    margin-bottom: 40px;
+}
+p,li{
+    font-size: 1.1rem;
+}
